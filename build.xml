@@ -4,14 +4,9 @@
 	<property name="classCode" location="./targets"/>
 	<property name="resultJavaClasses" location="${classCode}/classes"/>
     <property name="resultTestClasses" location="${classCode}/testclasses"/>
-    <dependency>
-         <groupId>junit</groupId>
-         <artifactId>junit</artifactId>
-         <version>4.13</version>
-          <scope>test</scope>
-    </dependency>
+    
 	<path id="NecessaryLibraries">
-	        <pathelement location="./UsedLibraries/junit-4.13.jar"/>
+	        <pathelement location="./UsedLibraries/junit-4.12.jar"/>
 	        <!--matcher-->
 	        <pathelement location="./UsedLibraries/hamcrest-core-1.3.jar"/>
 	        <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
@@ -32,7 +27,8 @@
 	            </classpath>
 	        </javac>
 	</target>
-    
+	
+   
 	<target name="test" depends="compile-testcases">
 	        <!--fork : each test will run in its own JVM (to seperate test cases)-->
 	        <junit printsummary="true" haltonfailure="true" fork="true">
