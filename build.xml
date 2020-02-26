@@ -13,6 +13,7 @@
 	</path>
 	
 	<target name="compile">
+	    <mkdir dir="${srcTest}"/>
 	    <mkdir dir="${resultJavaClasses}"/>
 		<javac srcdir="${srcCode}" destdir="${resultJavaClasses}" debug="true"  includeantruntime="false"/>
 	</target>
@@ -36,7 +37,7 @@
 	                <pathelement location="${resultTestClasses}"/>
 	            </classpath>
 	            <formatter type="brief" usefile="false"/>
-	            <batchtest >
+	            <batchtest>
 	                <fileset dir="${resultTestClasses}" >
 	                     <include name="**/*Test.class"/>
 	                </fileset>
