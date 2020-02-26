@@ -1,7 +1,7 @@
 <project default="compile">
 
-    <property name="srcCode" location="./src/softWare_Task"/>
-	<property name="srcTest" location="./src/softWare_Task"/>
+    <property name="srcCode" location="./src/softWare_Task/java"/>
+	<property name="srcTest" location="./src/softWare_Task/test"/>
 	<property name="classCode" location="./targets"/>
 	<property name="resultJavaClasses" location="${classCode}/classes"/>
     <property name="resultTestClasses" location="${classCode}/testclasses"/>
