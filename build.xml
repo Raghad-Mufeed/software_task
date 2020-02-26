@@ -1,4 +1,5 @@
 <project default="compile">
+
     <property name="srcCode" location="./src/softWare_Task"/>
 	<property name="srcTest" location="./src/softWare_Task"/>
 	<property name="classCode" location="./targets"/>
@@ -6,9 +7,9 @@
     <property name="resultTestClasses" location="${classCode}/testclasses"/>
     
 	<path id="NecessaryLibraries">
-	        <pathelement location="./src/softWare_Task/junit-4.12.jar"/>
+	        <pathelement location="./UsedLibraries/junit-4.12.jar"/>
 	        <!--matcher-->
-	        <pathelement location="./src/softWare_Task/hamcrest-core-1.3.jar"/>
+	        <pathelement location="./UsedLibraries/hamcrest-core-1.3.jar"/>
 	        <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
 	</path>
 	
