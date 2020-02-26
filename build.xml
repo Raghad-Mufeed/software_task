@@ -13,7 +13,7 @@
 	</path>
 	
 	<target name="compile">
-	    <mkdir dir="${srcTest}"/>
+	    <mkdir dir="${classCode}"/>
 	    <mkdir dir="${resultJavaClasses}"/>
 		<javac srcdir="${srcCode}" destdir="${resultJavaClasses}" debug="true"  includeantruntime="false"/>
 	</target>
