@@ -1,17 +1,18 @@
 package software_Task;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
 import java.lang.ArithmeticException;
-public class TestCalculator {
+
+public class TestCalculatorTest {
 	Calculator obj=new Calculator();
-	@BeforeEach
+	@Before
 	public void setUp() throws Exception {
 	    obj=new Calculator();
 	}
-	@AfterEach
+	@After
 	public void tearDown() throws Exception {
 	    obj =null;
 	}
@@ -41,5 +42,6 @@ public class TestCalculator {
 	public void testt() {
 		int y=obj.division(5,0);
 	}
+
 
 }
