@@ -1,4 +1,4 @@
-package software_Task;
+package software_Task.java;
 
 public class Calculator {
     public int add(int first_number,int second_number) {

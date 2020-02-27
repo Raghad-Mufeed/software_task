@@ -1,11 +1,11 @@
-package software_Task;
+package software_Task.test;
 
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import java.lang.ArithmeticException;
-
+import software_Task.java.*;
 public class TestCalculatorTest {
 	Calculator obj=new Calculator();
 	@Before
